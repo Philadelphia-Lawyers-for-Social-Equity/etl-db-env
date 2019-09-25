@@ -7,6 +7,6 @@ ETL for historical data and development database
 
 *run it* -- `$ docker run --rm -P --name PLSE-RT-ENV plse-rt-env`
 
-*connect to db --* `$ psql -h localhost -p 49153 -d docker -U docker --password`
+*connect to db --* `$ psql -h localhost -p 3000:49153 -d docker -U docker --password`
 
 ...more to come
