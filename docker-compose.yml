@@ -1,0 +1,22 @@
+version: '3'
+services:
+  toolbox:
+    container_name: plse-etl-toolbox
+    image: jupyter/pyspark-notebook
+    # mount volume to share ~/notebooks
+    # how to add build cmds? ex `pip install requirements.txt`
+    ports:
+      - '8888:8888'
+  # db
+  #   with juypter support (inline psql cmds)
+  # optional
+  #   ui
+  #   express api
+  #   redis
+  database:
+    container_name: plse-database
+    # mount volume for init sql dump upload to init db schema
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
