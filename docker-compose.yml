@@ -1,14 +1,15 @@
 version: '3'
 services:
   etl-toolbox:
-    container_name: notebook_container
-    image: jupyter/pyspark-notebook
+    container_name: etl-toolbox_container
+    build: ./etl
+    image: etl-toolbox_image
     volumes:
-      - ./notebooks:/home/jovyan
-      - ./tmp:/home/tmp
-    # @todo `pip install requirements.txt`
+      - ./etl/notebooks:/home/jovyan
+      - ./etl/data/tmp:/home/tmp
     ports:
       - '8888:8888'
+ 
   postgres:
     container_name: postgres_container
     image: postgres

@@ -6,7 +6,7 @@ ETL for historical data and development database
 * docker-compose
 
 ## To Run:
-`docker-compose up`
+`docker-compose up --build`
 
 ## Access to Jupyter Lab with PySpark: 
 *  localhost:8888?token=`token`
@@ -20,6 +20,9 @@ notebook_container |     Or copy and paste one of these URLs:
 notebook_container |         http://e643afef477d:8888/?token=54f3bf34463f369b2bc2b52be882930dfc9ead5f88da4cd1
 notebook_container |      or http://127.0.0.1:8888/?token=54f3bf34463f369b2bc2b52be882930dfc9ead5f88da4cd1
 ```
+
+SSH into server:
+`docker exec -it etl-toolbox_container /bin/bash`
 
 ## Access to postgres: 
 * `localhost:5432`

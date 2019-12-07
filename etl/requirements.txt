@@ -1,0 +1,5 @@
+pyfunctional
+pdfminer.six
+PyPDF2
+sqlalchemy
+psycopg2

@@ -1,2 +1,3 @@
 tmp/*
-notebooks/.ipynb_checkpoints/*
+etl/data/*
+etl/notebooks/.ipynb_checkpoints/*
