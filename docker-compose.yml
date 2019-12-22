@@ -9,6 +9,8 @@ services:
       - ./etl/data/tmp:/home/tmp
     ports:
       - '8888:8888'
+    networks:
+      - plse
  
   postgres:
     container_name: postgres_container
