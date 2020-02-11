@@ -49,9 +49,9 @@ To start a interactive Postgres terminal session:
 * **Password** as `POSTGRES_PASSWORD`, by default `changeme`
 
 # Docket Scrapping
-If you have not already `mkdir -p etl/data/tmp/` then extract the sample_dockets.zip into that directory.
+If you have not already `mkdir -p etl/data/tmp/` then extract the sample_dockets.zip into that directory. Ask a team member for the password to unzip.
 
-The current state of the docket scrapping process will be found in a Jupyter notebook image.
+The current state of the docket scrapping process will be found in a Jupyter notebook image. Two workflows exist. One using [pdfminer.six](https://pypi.org/project/pdfminer.six/) and another using [PyPDF2](https://pythonhosted.org/PyPDF2/).
 
 ---
 [See the Wiki for additional information](https://github.com/Philadelphia-Lawyers-for-Social-Equity/etl-db-env/wiki)
