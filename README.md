@@ -6,7 +6,12 @@ ETL for historical data and development database
 * docker-compose
 
 ## To Run:
-`docker-compose up --build`
+`docker-compose up`
+
+If running for the first time without the sql.dump file you will need the obatin the data set files from another team member. Then `mkdir -p etl/data/tmp` then copy the data set files into that directory. 
+
+
+This is the core file used at this time etl-db-env/etl/data/tmp/PA2459713_Philadelphia_CaseData_Deliverable.xlsx
 
 ## Access to Jupyter Lab with PySpark: 
 *  localhost:8888?token=`token`
@@ -29,7 +34,7 @@ SSH into server:
 * **Username:** postgres (as a default)
 * **Password:** changeme (as a default)
 
-To start a interactive terminal session:
+To start a interactive Postgres terminal session:
 `docker exec -it postgres_container psql -U postgres`
 
 ## Access to PgAdmin: 
@@ -43,7 +48,10 @@ To start a interactive terminal session:
 * **Username** as `POSTGRES_USER`, by default: `postgres`
 * **Password** as `POSTGRES_PASSWORD`, by default `changeme`
 
+# Docket Scrapping
+If you have not already `mkdir -p etl/data/tmp/` then extract the sample_dockets.zip into that directory.
 
+The current state of the docket scrapping process will be found in a Jupyter notebook image.
 
 ---
 [See the Wiki for additional information](https://github.com/Philadelphia-Lawyers-for-Social-Equity/etl-db-env/wiki)
