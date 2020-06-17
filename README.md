@@ -30,7 +30,7 @@ SSH into server:
 `docker exec -it etl-toolbox_container /bin/bash`
 
 ## Access to postgres: 
-* `localhost:5432`
+* **URL:** `localhost:5432`
 * **Username:** postgres (as a default)
 * **Password:** changeme (as a default)
 
@@ -38,7 +38,7 @@ To start a interactive Postgres terminal session:
 `docker exec -it postgres_container psql -U postgres`
 
 ## Access to PgAdmin: 
-* **URL:** `http://localhost:5050`
+* **URL:** `localhost:5050`
 * **Username:** pgadmin4@pgadmin.org (as a default)
 * **Password:** admin (as a default)
 
